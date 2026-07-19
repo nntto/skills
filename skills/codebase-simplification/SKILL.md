@@ -220,14 +220,4 @@ PRの読み筋と依存:
 - 競合中の作業へ統合する方が合理的になった。
 - ユーザーが打ち切りまたは優先度変更を指示した。
 
-## 他skillと分担する
-
-利用可能な場合に限り、次を組み合わせる。
-
-- `bold-maintainability-audit`: repository全体から候補と定量証拠を発見する。
-- `constraint-boundary-review`: hard / soft / accidental constraintを精査する。
-- `domain-modeling-interview`: 統合・分離・仕様削除の前に意味の正本を確定する。
-- `minimum-diff-convergence`: 採用後の1 PRを最小のreview単位へ収束させる。
-- `shida-review-report`: 差分をレビューし、findingと図解を成果物へ残す。
-
 具体例と負例が必要な場合は [examples.md](references/examples.md) を読む。
