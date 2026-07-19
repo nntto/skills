@@ -42,7 +42,3 @@ ln -s "$(pwd)/skills/skills/codebase-simplification" ~/.codex/skills/codebase-si
 ```
 
 コードベース整理・リファクタリング方針の相談時に自動で発火するほか、skill 名を指定して明示的に呼び出せます。
-
-## License
-
-MIT
