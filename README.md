@@ -1,6 +1,11 @@
-# claude-skills
+# skills
 
-Claude Code / Codex 向けの自作 agent skill を公開しています。
+自作の agent skill を公開しています。
+Claude Code / Codex など、Markdown ベースの skill を読めるコーディングエージェントで使えます。
+
+> [!NOTE]
+> この README の文章は AI（Claude Code）が生成し、人間が内容を確認しています。
+> 各 skill 本体も AI との対話を通じて作成・改善しているものです。
 
 ## Skills
 
@@ -24,14 +29,19 @@ Claude Code / Codex 向けの自作 agent skill を公開しています。
 
 ## インストール
 
-Claude Code の場合:
+skill ディレクトリを、使っているエージェントの skill 置き場へ symlink します。
 
 ```sh
-git clone https://github.com/nntto/claude-skills.git
-ln -s "$(pwd)/claude-skills/skills/codebase-simplification" ~/.claude/skills/codebase-simplification
+git clone https://github.com/nntto/skills.git
+
+# Claude Code
+ln -s "$(pwd)/skills/skills/codebase-simplification" ~/.claude/skills/codebase-simplification
+
+# Codex
+ln -s "$(pwd)/skills/skills/codebase-simplification" ~/.codex/skills/codebase-simplification
 ```
 
-`/codebase-simplification` で呼び出すか、コードベース整理・リファクタリング方針の相談時に自動で発火します。
+コードベース整理・リファクタリング方針の相談時に自動で発火するほか、skill 名を指定して明示的に呼び出せます。
 
 ## License
 
