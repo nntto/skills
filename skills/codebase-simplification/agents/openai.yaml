@@ -1,0 +1,4 @@
+interface:
+  display_name: "コードベース整理"
+  short_description: "正本を基準に不要な仕様と構造を削り、変更局所性を高める"
+  default_prompt: "$codebase-simplification を使って、正本を基準にコードベースのworking setを純減させる候補を判定してください。"
