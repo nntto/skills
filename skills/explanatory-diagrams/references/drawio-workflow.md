@@ -4,6 +4,8 @@
 
 既存図を使う場合は、出典 URL、図番号やページ、利用条件、切り出しなどの変更内容を残す。加工後も、凡例・矢印・数値条件など、図の意味を支える情報との対応を保つ。
 
+CC BY などのライセンスで公開されている図は、ライセンスの条件に従って載せる。CC BY 4.0 なら、著作者、題名、出典の URL、ライセンスの名前と URL を図の中に書く。切り出しや番号の追加などの変更をしたときは、そのことも書く。見本の [templates/reference-figure](../templates/reference-figure/reference-figure.drawio.png) は、CC BY 4.0 で公開されている論文の図を、この形で載せている。
+
 利用の許諾がない他者の著作物は、引用として載せる。引用として扱うために、図の中で次のことを満たす。
 
 - 引用した部分に「引用」と見出しを付け、枠などで自分の説明と区別する。
@@ -11,7 +13,7 @@
 - 著作者、題名、掲載日、URL を引用元として書く。撮影した画面なら撮影日も書く。
 - 引用した図や画面は変えない。番号や枠を加えたときは、引用者が加えたものだと書く。
 
-見本の [templates/screenshot-annotation](../templates/screenshot-annotation/screenshot-annotation.drawio.png) と [templates/reference-figure](../templates/reference-figure/reference-figure.drawio.png) は、この形で Claude のブログを引用している。
+見本の [templates/screenshot-annotation](../templates/screenshot-annotation/screenshot-annotation.drawio.png) は、この形で Google 検索のトップページを引用している。
 
 ## 画像の埋め込み
 
@@ -44,7 +46,7 @@ python3 -c 'import base64,sys; print("data:image/png," + base64.b64encode(open(s
 - 画面の要素を強調するときは、撮影時に強調する（Playwright CLI なら `highlight`）。図では番号と説明だけを重ねる。
 - Web ページに載っている図は、ページを開いて図の要素だけを撮影して取り込める（Playwright CLI なら `screenshot <要素>`）。図の中の文字が潰れないよう、解像度を上げて撮る。出典の URL と撮影日を残す。
 
-見本は [templates/screenshot-annotation](../templates/screenshot-annotation/screenshot-annotation.drawio.png)（画面と実装の対応）と [templates/reference-figure](../templates/reference-figure/reference-figure.drawio.png)（外部資料の図の引用）にある。画面の前後比較は、スクリーンショットを [templates/before-after-split](../templates/before-after-split/before-after-split.drawio.png) の体裁で左右に並べる。
+見本は [templates/screenshot-annotation](../templates/screenshot-annotation/screenshot-annotation.drawio.png)（画面と実装の対応）と [templates/reference-figure](../templates/reference-figure/reference-figure.drawio.png)（外部資料の図の利用）にある。画面の前後比較は、スクリーンショットを [templates/before-after-split](../templates/before-after-split/before-after-split.drawio.png) の体裁で左右に並べる。
 
 ## 書き出し
 

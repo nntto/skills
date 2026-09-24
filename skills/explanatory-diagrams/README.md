@@ -24,7 +24,7 @@ draw.io 以外の手段（画像生成、デザインツール）は SKILL.md �
 
 たとえば AWS の構成の変更を説明するときは、「AWS 構成図」の記法で描き、「1 枚に差分を重ねる」の見せ方で変更点を示します。
 
-図形で描いた見本は、同じ架空の EC サービス（注文・支払い・出荷）を題材にしています。画像を埋め込む 2 枚（画面と実装の対応、外部資料の図の引用）は、Claude のブログの実際のページと図を引用しています。引用元、引用の範囲、引用者が加えたものは、それぞれの図の中に書いています。画像はすべて `.drawio.png` で、draw.io で開くとそのまま編集できます。配色と線の意味は [references/drawio-style.md](references/drawio-style.md) にまとめています。
+図形で描いた見本は、同じ架空の EC サービス（注文・支払い・出荷）を題材にしています。画像を埋め込む 2 枚は、実物の画像を使っています。画面と実装の対応は Google 検索のトップページを引用し、外部資料の図の利用は MemGPT の論文の図を CC BY 4.0 のライセンスに従って載せています。引用元やライセンスなど、載せるために必要なことは、それぞれの図の中に書いています。画像はすべて `.drawio.png` で、draw.io で開くとそのまま編集できます。配色と線の意味は [references/drawio-style.md](references/drawio-style.md) にまとめています。
 
 ## 見せ方
 
@@ -130,15 +130,15 @@ draw.io 以外の手段（画像生成、デザインツール）は SKILL.md �
 
 ### 画面と実装の対応
 
-使う場面：画面のどこが、どの要素・コンポーネント・データから作られるかを説明する。撮影時に対象の要素を強調し（見本は Playwright CLI の `highlight`）、図では番号と対応表を重ねる。見本は Claude のブログの記事ページ。
+使う場面：画面のどこが、どの要素・コンポーネント・データから作られるかを説明する。撮影時に対象の要素を強調し（見本は Playwright CLI の `highlight`）、図では番号と対応表を重ねる。見本は Google 検索のトップページ。
 
-![Claude のブログの記事ページで強調した要素と、HTML の要素・CMS との対応](templates/screenshot-annotation/screenshot-annotation.drawio.png)
+![Google 検索のトップページで強調した検索の部分と、HTML の要素の対応](templates/screenshot-annotation/screenshot-annotation.drawio.png)
 
-### 外部資料の図の引用
+### 外部資料の図の利用
 
-使う場面：公表済みの構成や設計を採用する設計ドキュメント。資料の図は描き直さずに埋め込み、番号で自分たちの部品と対応づけ、出典・利用条件・加工内容を残す。見本の図は Claude のブログの記事から引用した。
+使う場面：公表済みの構成や設計を採用する設計ドキュメント。資料の図は描き直さずに埋め込み、番号で自分たちの構成と対応づけ、出典・利用条件・加工内容を残す。見本は、CC BY 4.0 で公開されている MemGPT の論文の図を載せた。
 
-![Claude のブログの Claude Managed Agents の図と、返品対応エージェントの構成の対応](templates/reference-figure/reference-figure.drawio.png)
+![MemGPT の論文の Figure 3 と、返品対応エージェントの記憶の置き場の対応](templates/reference-figure/reference-figure.drawio.png)
 
 ## テンプレートの追加
 
